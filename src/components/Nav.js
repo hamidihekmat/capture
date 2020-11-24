@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
@@ -6,13 +7,19 @@ function Nav() {
       <h1 id="logo">Capture</h1>
       <ul>
         <li>
-          <button>1. About Us</button>
+          <Link to="/">
+            <button>About Us</button>
+          </Link>
         </li>
         <li>
-          <button>2. Our Work</button>
+          <Link to="/work">
+            <button>Our Work</button>
+          </Link>
         </li>
         <li>
-          <button>1. Contact Us</button>
+          <Link to="/contact">
+            <button>Contact Us</button>
+          </Link>
         </li>
       </ul>
     </StyledNav>
