@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Faq() {
+function FaqSection() {
   return (
     <div className="faq">
       <h2>
@@ -46,4 +46,4 @@ function Faq() {
   );
 }
 
-export default Faq;
+export default FaqSection;

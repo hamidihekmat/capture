@@ -6,7 +6,7 @@ import money from '../img/money.svg';
 import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 
-function Services() {
+function ServicesSection() {
   return (
     <div className="services">
       <div className="description">
@@ -51,4 +51,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default ServicesSection;
