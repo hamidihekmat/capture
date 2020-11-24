@@ -1,5 +1,6 @@
 import React from 'react';
 import home1 from '../img/home1.png';
+import { Container, Description, Image, Hide } from '../styles';
 import styled from 'styled-components';
 
 function AboutSection() {
@@ -32,37 +33,8 @@ function AboutSection() {
   );
 }
 
-// Styled Components
-const About = styled.div`
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
-  color: white;
-`;
+// Stlyled Components
 
-const Description = styled.div`
-  flex: 1;
-  padding-right: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const Image = styled.div`
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    object-position: center;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
+const About = styled(Container)``;
 
 export default AboutSection;
