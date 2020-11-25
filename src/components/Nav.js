@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <StyledNav>
-      <h1 id="logo">Capture</h1>
+      <Link to="/">
+        <h1 id="logo">Capture</h1>
+      </Link>
       <ul>
         <li>
           <Link to="/">
@@ -53,6 +55,7 @@ const StyledNav = styled.nav`
   #logo {
     font-family: 'Lobster', cursive;
     color: white;
+    cursor: pointer;
   }
 `;
 

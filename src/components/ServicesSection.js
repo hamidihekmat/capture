@@ -6,7 +6,8 @@ import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 import { Container, Description, Image } from '../styles';
 import styled from 'styled-components';
-
+import { motion } from 'framer-motion';
+import { imgHover } from '../animate';
 function ServicesSection() {
   return (
     <Services>
@@ -46,7 +47,7 @@ function ServicesSection() {
         </Cards>
       </Description>
       <Image>
-        <img src={home2} alt="camera" />
+        <motion.img whileHover={imgHover} src={home2} alt="camera" />
       </Image>
     </Services>
   );
