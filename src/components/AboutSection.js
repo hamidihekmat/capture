@@ -4,7 +4,7 @@ import { Container, Description, Image, Hide } from '../styles';
 import styled from 'styled-components';
 // Framer Motion
 import { motion } from 'framer-motion';
-import { imgHover } from '../animate';
+import { imageAnimation, titleAnimation, fade, imageHover } from '../animate';
 
 function AboutSection() {
   return (
@@ -12,25 +12,30 @@ function AboutSection() {
       <Description>
         <motion.div className="title">
           <Hide>
-            <motion.h2>We work to make</motion.h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>
+            <motion.h2 variants={titleAnimation}>
               your <span>dreams</span>
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2>come true.</motion.h2>
+            <motion.h2 variants={titleAnimation}>come true.</motion.h2>
           </Hide>
         </motion.div>
-        <p>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </Description>
       <Image>
-        <motion.img whileHover={imgHover} src={home1} alt="guy with a camera" />
+        <motion.img
+          variants={imageAnimation}
+          whileHover={imageHover}
+          src={home1}
+          alt="guy with a camera"
+        />
       </Image>
     </About>
   );
